@@ -4,6 +4,7 @@ var sass = require('gulp-sass');
 var concatCss = require('gulp-concat-css');
 var browserSync = require('browser-sync');
 var autoprefixer = require('gulp-autoprefixer');
+var urlencode = require('gulp-css-urlencode-inline-svgs');
 
 gulp.task('browser-sync', function() {
     browserSync({
@@ -30,6 +31,7 @@ gulp.task('css', function () {
 		browsers: ['last 2 versions'],
 		cascade: false
 	}))
+  .pipe(urlencode())
 	.pipe(concatCss("./index.css", { rebaseUrls: false }))
 	.pipe(gulp.dest('./css'))
 	.pipe(browserSync.reload({stream: true}))

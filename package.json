@@ -13,6 +13,7 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat-css": "^2.3.0",
+    "gulp-css-urlencode-inline-svgs": "0.0.5",
     "gulp-postcss": "^6.1.1",
     "gulp-sass": "^2.3.2"
   }

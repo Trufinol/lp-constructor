@@ -8,7 +8,9 @@
   <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.4/css/uikit.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.css">
-  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/dom4/1.8.3/dom4.js"></script>
+  <script src="js/modernizr.js"></script>
   <title>Landing constructor</title>
 </head>
 <body>
@@ -17,7 +19,7 @@
   </div>
   <div class="content">
     <header class="header clearfix">
-      <a href="#" class="logo"><img class="logo__img" src="svg/logo.svg" alt=""></a>
+      <a href="#" class="logo"><img class="logo__img" src="img/logo.png" alt=""></a>
       <h1 class="header__headname">НЕЙМ ЛЕНДИНГА</h1>
     </header>
     <section class="section-video">
@@ -35,41 +37,49 @@
         <div class="swiper-button-next video-slider-btn-next"></div>
       </section>
       <!-- .section-video -->
-      <section class="section-float-articles">
+      <section class="section-articles">
         <h2 class="section__name">Название рубрики</h2>
         <div class="row">
           <div class="col-md-6">
-            <div class="float-article">
-              <img src="/img/1.jpg" alt="" class="float-article__img">
-              <h4 class="float-article__headline">Трендовые летние прически-2016: полупучки, Beach waves и ретро </h3>
-                <p class="float-article__text">Именно летом хочется на полную раскрыть свою индивидуальность. Открытые платья и сарафаны, креативные шорты и майки, строгие костюмы и юбки – и под каждый микс необходимо иметь в запасе...</p>
-                <a href="#" class="float-article__link">Подробнее &raquo;</a>
+            <div class="media article">
+              <div class="media-left"><a class="media-link" href="#"><img src="img/1.jpg" alt="" class="media-object article__img"></a></div>
+              <div class="media-body">
+                <h4 class="media-heading article__headline">Трендовые летние прически-2016: полупучки, Beach waves и ретро </h4>
+                <p class="article__text">Именно летом хочется на полную раскрыть свою индивидуальность. Открытые платья и сарафаны, креативные шорты и майки, строгие костюмы и юбки – и под каждый микс необходимо иметь...</p>
+                <a href="#" class="article__link">Подробнее &raquo;</a>
+              </div>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="float-article">
-                <img src="/img/2.jpg" alt="" class="float-article__img">
-                <h4 class="float-article__headline">Возьмите в дорогу игрушки для взрослых </h3>
-                  <p class="float-article__text">Бывают работы, связанные с частыми поездками и длительным пребыванием вне дома. Что делать, если заводить случайные связи на одну ночь не хочется, а сексуальная разрядка после напряженного...</p>
-                  <a href="#" class="float-article__link">Подробнее &raquo;</a>
+              <div class="media article">
+                <div class="media-left"><a class="media-link" href="#"><img src="img/2.jpg" alt="" class="media-object article__img"></a></div>
+                <div class="media-body">
+                  <h4 class="media-heading article__headline">ТВозьмите в дорогу игрушки для взрослых</h4>
+                  <p class="article__text">Бывают работы, связанные с частыми поездками и длительным пребыванием вне дома. Что делать, если заводить случайные связи на одну ночь не хочется, а сексуальная разрядка после напряженного...</p>
+                  <a href="#" class="article__link">Подробнее &raquo;</a>
+                </div>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-6">
-                <div class="float-article">
-                  <img src="/img/3.jpg" alt="" class="float-article__img">
-                  <h4 class="float-article__headline">Увлеченные Италией, или почему стоит выбрать итальянскую обувь.</h3>
-                    <p class="float-article__text">Высочайшее качество производства, оригинальный почерк и авторский дизайн моделей с той самой заветной надписью «Made in Italy» уже не один десяток лет будоражит модниц и модников всего ...</p>
-                    <a href="#" class="float-article__link">Подробнее &raquo;</a>
+                <div class="media article">
+                  <div class="media-left"><a class="media-link" href="#"><img src="img/3.jpg" alt="" class="media-object article__img"></a></div>
+                  <div class="media-body">
+                    <h4 class="media-heading article__headline">Увлеченные Италией, или почему стоит выбрать итальянскую обувь.</h4>
+                    <p class="article__text">Высочайшее качество производства, оригинальный почерк и авторский дизайн моделей с той самой заветной надписью «Made in Italy» уже не один десяток лет будоражит модниц и модников всего ...</p>
+                    <a href="#" class="article__link">Подробнее &raquo;</a>
+                  </div>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="float-article">
-                    <img src="/img/4.jpg" alt="" class="float-article__img">
-                    <h4 class="float-article__headline">Удаление сосудов лазером - все "за" и "против"</h3>
-                      <p class="float-article__text">Удаление сосудов, или, как часто говорят в народе "удаление вен" - одна из самых актуальных процедур в наше время. Люди беспокоятся не только за эстетическую сторону вопроса, но и волнуются о...</p>
-                      <a href="#" class="float-article__link">Подробнее &raquo;</a>
+                  <div class="media article">
+                    <div class="media-left"><a class="media-link" href="#"><img src="img/4.jpg" alt="" class="media-object article__img"></a></div>
+                    <div class="media-body">
+                      <h4 class="media-heading article__headline">Удаление сосудов лазером - все "за" и "против"</h4>
+                      <p class="article__text">Удаление сосудов, или, как часто говорят в народе "удаление вен" - одна из самых актуальных процедур в наше время. Люди беспокоятся не только за эстетическую сторону вопроса, но и волнуются о...</p>
+                      <a href="#" class="article__link">Подробнее &raquo;</a>
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -81,14 +91,14 @@
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
                       <p class="photo-slider__name">Уход за длинными волосами: подборка эффективных процедур </p>
-                      <img src="/img/rubric.jpg" alt="">
+                      <img src="img/rubric.jpg" alt="">
                     </div>
                     <div class="swiper-slide">
                       <p class="photo-slider__name">Далеко-далеко за словесными горами в стране, гласных.</p>
-                      <img src="/img/fashion-q-c-860-434-1.jpg" alt=""></div>
+                      <img src="img/fashion-q-c-860-434-1.jpg" alt=""></div>
                       <div class="swiper-slide">
                         <p class="photo-slider__name">Далеко-далеко за словесными горами в стране, гласных.</p>
-                        <img src="/img/sports-q-c-860-434-7.jpg" alt="">
+                        <img src="img/sports-q-c-860-434-7.jpg" alt="">
                       </div>
                     </div>
                     <div class="swiper-button-next swiper-button-black"></div>
@@ -101,28 +111,28 @@
                   <div class="swiper-container _centered-slider-container">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide _centered-swiper-slide">
-                        <img src="/img/slider-1.jpg" alt="">
-                        <a href="#" class="float-article__headline">Золотой шафран - изысканное удовольствие </a>
+                        <img src="img/slider-1.jpg" alt="">
+                        <a href="#" class="article__headline">Золотой шафран - изысканное удовольствие </a>
                       </div>
                       <div class="swiper-slide _centered-swiper-slide">
-                        <img src="/img/slider-2.jpg" alt="">
-                        <a href="#" class="float-article__headline">Куда пойти на эти выходные в Киеве? </a>
+                        <img src="img/slider-2.jpg" alt="">
+                        <a href="#" class="article__headline">Куда пойти на эти выходные в Киеве? </a>
                       </div>
                       <div class="swiper-slide _centered-swiper-slide">
-                        <img src="/img/slider-3.jpg" alt="">
-                        <a href="#" class="float-article__headline">7 полезных свойств солярия летом </a>
+                        <img src="img/slider-3.jpg" alt="">
+                        <a href="#" class="article__headline">7 полезных свойств солярия летом </a>
                       </div>
                       <div class="swiper-slide _centered-swiper-slide">
-                        <img src="/img/slider-4.jpg" alt="">
-                        <a href="#" class="float-article__headline">5 преимуществ аппаратного маникюра </a>
+                        <img src="img/slider-4.jpg" alt="">
+                        <a href="#" class="article__headline">5 преимуществ аппаратного маникюра </a>
                       </div>
                       <div class="swiper-slide _centered-swiper-slide">
-                        <img src="/img/slider-1.jpg" alt="">
-                        <a href="#" class="float-article__headline">Золотой шафран - изысканное удовольствие </a>
+                        <img src="img/slider-1.jpg" alt="">
+                        <a href="#" class="article__headline">Золотой шафран - изысканное удовольствие </a>
                       </div>
                       <div class="swiper-slide _centered-swiper-slide">
-                        <img src="/img/slider-2.jpg" alt="">
-                        <a href="#" class="float-article__headline">Куда пойти на эти выходные в Киеве? </a>
+                        <img src="img/slider-2.jpg" alt="">
+                        <a href="#" class="article__headline">Куда пойти на эти выходные в Киеве? </a>
                       </div>
                     </div>
                     <div class="swiper-button-next swiper-button-prev-black"></div>
@@ -133,14 +143,14 @@
                 <section class="block-article">
                   <h2 class="section__name">Название рубрики</h2>
                   <div class="row">
-                    <div class="col-md-6">
-                      <img src="/img/module5-1.jpg" alt="" class="block-article__img">
+                    <div class="col-md-6 col-sm-6">
+                      <img src="img/module5-1.jpg" alt="" class="block-article__img">
                       <h4 class="block-article__headline">5 модных аксессуаров этого лета</h4>
                       <p class="block-article__text">Когда Вы идете по улице в знойном мареве, или в проливной дождь, а на Ваши аксессуары обращают внимание все - независимо от пола, значит, Вы в курсе трендовых...</p>
                       <a href="" class="block-article__link">Подробнее &raquo;</a>
                     </div>
-                    <div class="col-md-6">
-                      <img src="/img/module5-2.jpg" alt="" class="block-article__img">
+                    <div class="col-md-6 col-sm-6">
+                      <img src="img/module5-2.jpg" alt="" class="block-article__img">
                       <h4 class="block-article__headline">Трендовые летние прически-2016: полупучки, Beach waves и ретро</h4>
                       <p class="block-article__text">Именно летом хочется на полную раскрыть свою индивидуальность. Открытые платья и сарафаны, креативные шорты...</p>
                       <a href="" class="block-article__link">Подробнее &raquo;</a>
@@ -214,40 +224,41 @@
                 </section>
                 <footer class="footer">
                   <p class="footer__heading">Поделиться:</p>
-                    <a href="#" class="footer__social-link">
+                    <a href="https://www.facebook.com/IZUMua" target="_blank" class="footer__social-link">
                       <svg class="svg-icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#social-fb"></use>
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#social-fb"></use>
                       </svg>
                     </a>
-                    <a href="#" class="footer__social-link">
+                    <a href="https://instagram.com/izum_ua/" target="_blank" class="footer__social-link">
                       <svg class="svg-icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#social-insta"></use>
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#social-insta"></use>
                       </svg>
                     </a>
-                    <a href="#" class="footer__social-link">
+                    <a href="https://www.youtube.com/user/izumua" target="_blank" class="footer__social-link">
                       <svg class="svg-icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#social-youtube"></use>
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#social-youtube"></use>
                       </svg>
                     </a>
-                    <a href="#" class="footer__social-link">
+                    <a href="http://vk.com/club1706721" target="_blank" class="footer__social-link">
                       <svg class="svg-icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#social-vk"></use>
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#social-vk"></use>
                       </svg>
                     </a>
-                    <a href="#" class="footer__social-link">
+                    <a href="https://plus.google.com/115189627004662160507/posts" target="_blank" class="footer__social-link">
                       <svg class="svg-icon">
-                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/icons.svg#social-gp"></use>
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icons.svg#social-gp"></use>
                       </svg>
                     </a>
                 </footer>
               </div>
               <!-- .content -->
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
-              <script src="/js/slider.js"></script>
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-              <script src="/js/uikit/core.js"></script>
-              <script src="/js/uikit/modal.js"></script>
-              <script src="/js/uikit/lightbox.js"></script>
 
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.min.js"></script>
+              <script src="js/slider.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+              <script src="js/uikit/core.js"></script>
+              <script src="js/uikit/modal.js"></script>
+              <script src="js/uikit/lightbox.js"></script>
+              <script>svg4everybody();</script>
             </body>
             </html>
