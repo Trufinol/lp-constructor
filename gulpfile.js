@@ -28,7 +28,7 @@ gulp.task('css', function () {
 	return gulp.src('./scss/**/*.scss')
 	.pipe(sass({expanded: true}).on('error', sass.logError))
 	.pipe(autoprefixer({
-		browsers: ['last 2 versions'],
+		browsers: ['last 10 versions'],
 		cascade: false
 	}))
   .pipe(urlencode())
